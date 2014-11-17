@@ -1,7 +1,7 @@
 {
   "name": "grunt-nightwatchjs",
   "description": "Grunt plugin for http://nightwatchjs.org/",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/dmartin/grunt-nightwatchjs",
   "author": {
     "name": "David Martin",
@@ -36,6 +36,6 @@
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin", "nightwatch", "nightwatchjs", "grunt", "selenium"
   ]
 }
