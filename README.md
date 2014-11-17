@@ -1,6 +1,8 @@
 # grunt-nightwatchjs
 
-> Grunt plugin for http://nightwatchjs.org/
+[![npm version](https://badge.fury.io/js/grunt-nightwatchjs.svg)](http://badge.fury.io/js/grunt-nightwatchjs)
+
+Grunt plugin for http://nightwatchjs.org/
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
