@@ -1,6 +1,6 @@
 # grunt-nightwatchjs
 
-[![npm version](https://badge.fury.io/js/grunt-nightwatchjs.svg)](http://badge.fury.io/js/grunt-nightwatchjs)
+[![npm version](https://badge.fury.io/js/grunt-nightwatchjs.svg)](http://badge.fury.io/js/grunt-nightwatchjs) [![Build Status](https://travis-ci.org/david-martin/grunt-nightwatchjs.svg)](https://travis-ci.org/david-martin/grunt-nightwatchjs)
 
 Grunt plugin for http://nightwatchjs.org/
 
