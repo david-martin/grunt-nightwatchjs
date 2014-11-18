@@ -1,7 +1,7 @@
 env:
   global:
-    secure: "CaGqB9/NsZEDPIOZKbJTmVYQFJ1aIFx7FDfPWIxmFPR0FPRNkfBfHGqf9+NiVFmmpQz6P1RpgQPkqJ0aRjoEOi9P4QVXJh3GeH5w2Nq2lehs9QSKfp92j8/pOkWd5U+gBWrTSMXB7BHi+ycCyX2runI26lBFNImyCJB6m8PXelk="
-    secure: "XbUBPXoIqpxN+RBe4TObok5aK7G4YskPgDmyiNDpGsTNNAMatYVpAG5lpdwrs9joctvm2MASxdk2KqirWEJ/1CbE2Lxsi2DqeMuY0TqyMiSNZPCNDNgizSnErLrO++3RflvC+P0o/W9t7xBfMCxiycT9cvXXPrQ6jVDsxohSX5Q="
+    - secure: "CaGqB9/NsZEDPIOZKbJTmVYQFJ1aIFx7FDfPWIxmFPR0FPRNkfBfHGqf9+NiVFmmpQz6P1RpgQPkqJ0aRjoEOi9P4QVXJh3GeH5w2Nq2lehs9QSKfp92j8/pOkWd5U+gBWrTSMXB7BHi+ycCyX2runI26lBFNImyCJB6m8PXelk="
+    - secure: "XbUBPXoIqpxN+RBe4TObok5aK7G4YskPgDmyiNDpGsTNNAMatYVpAG5lpdwrs9joctvm2MASxdk2KqirWEJ/1CbE2Lxsi2DqeMuY0TqyMiSNZPCNDNgizSnErLrO++3RflvC+P0o/W9t7xBfMCxiycT9cvXXPrQ6jVDsxohSX5Q="
 addons:
   sauce_connect: true
 language: node_js
