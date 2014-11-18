@@ -36,6 +36,13 @@
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin", "nightwatch", "nightwatchjs", "grunt", "selenium"
-  ]
+    "gruntplugin",
+    "nightwatch",
+    "nightwatchjs",
+    "grunt",
+    "selenium"
+  ],
+  "dependencies": {
+    "nightwatch": "^0.5.33"
+  }
 }

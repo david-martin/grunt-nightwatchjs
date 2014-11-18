@@ -30,7 +30,7 @@ module.exports = function(grunt) {
       env: process.env,
       stdio: 'inherit'
     }).on('close', function(code) {
-      if (code != 0) {
+      if (code !== 0) {
         return done(false);
       }
       return done();
