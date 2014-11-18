@@ -5,7 +5,7 @@ addons:
       secure: "ip7pzhnQSQ4fw6LK6ozz4uR7E9WbzSgwFy+y3eNvbPRf/Vyk3T1/LMmawuRJ/DYfPdKnaaa8wWTcDNdzTzCHjKav7nxDOuT8Twz4nhJ52HcmLCDjaUj9vSpRQDcO7T0P7KumredllDGxoFSBFDrffOvglS+c3OYwBizgivz4dN8=" 
 language: node_js
 node_js:
-  - 0.8
+  - 0.10
 before_script:
   - npm install -g grunt-cli
 script:
