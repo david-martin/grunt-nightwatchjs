@@ -16,8 +16,8 @@
   "output_folder": "reports",
   "test_settings": {
     "test" : {
-      "selenium_host" : "ondemand.saucelabs.com",
-      "selenium_port" : 80,
+      "selenium_host" : "127.0.0.1",
+      "selenium_port" : 4445,
       "username" : "${SAUCE_USERNAME}",
       "access_key" : "${SAUCE_ACCESS_KEY}",
       "use_ssl" : false,
