@@ -1,12 +1,13 @@
 addons:
-  sauce_connect:
-    username: david-martin
-    access_key:
-      secure: "ip7pzhnQSQ4fw6LK6ozz4uR7E9WbzSgwFy+y3eNvbPRf/Vyk3T1/LMmawuRJ/DYfPdKnaaa8wWTcDNdzTzCHjKav7nxDOuT8Twz4nhJ52HcmLCDjaUj9vSpRQDcO7T0P7KumredllDGxoFSBFDrffOvglS+c3OYwBizgivz4dN8=" 
+  sauce_connect: true
 language: node_js
 node_js:
-  - 0.10
+- 0.10
 before_script:
-  - npm install -g grunt-cli
+- npm install -g grunt-cli
 script:
-  - grunt
+- grunt
+env:
+  global:
+  - secure: VTFvmKxgNjIdrZ36Ibhl/7onT+8cPHVcVIrTIbmtGQygVwkTgHW8MuuEOPdj8SojpACCpF82H/HbZF1dqQxcCDU0c0MKixcGrT+C70MI8mChutCc31f9tvpNAHkDoyveZLvlO99/ZVFGS+IQdmBkh8/jd/ekRxUCBqOS1DrYv8M=
+  - secure: v4v2hkm9RYKJ7uP0J2jjf2xT0Mo9f20qsvrGlDd6mrPF+0R9JrahXKcuLkgzYCW+VnVj4dPr2KwWQJA4vsRzTGS4InqGYh9+jx1sonXibRgQBn3Nes5SwCrmq9JnAPl5HOehhk1l4sJc6MYKs6jh3kWf+5cLSZrcC7JonGiUgHM=
