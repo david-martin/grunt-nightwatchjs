@@ -25,6 +25,24 @@ module.exports = function(grunt) {
       args = args.concat(['-f', filter]);
     }
 
+    var specificTest = grunt.option('test');
+
+    if(specificTest){
+      args = args.concat(['-t', specificTest]);
+    }
+
+    var groups = grunt.option('group');
+
+    if(groups){
+      args = args.concat(['--group', groups]);
+    }
+
+    var tag = grunt.option('tag');
+
+    if(tag){
+      args = args.concat(['--tag', tag]);
+    }
+
     grunt.log.writeln('Running nightwatchjs with args:' + util.inspect(args, { depth: null }));
     require('child_process').spawn('./node_modules/.bin/nightwatch', args, {
       env: process.env,
