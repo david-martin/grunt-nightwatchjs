@@ -43,6 +43,12 @@ module.exports = function(grunt) {
       args = args.concat(['--tag', tag]);
     }
 
+    var config = grunt.option('config');
+
+    if(config){
+      args = args.concat(['--config', config]);
+    }
+
     grunt.log.writeln('Running nightwatchjs with args:' + util.inspect(args, { depth: null }));
     require('child_process').spawn('./node_modules/.bin/nightwatch', args, {
       env: process.env,
