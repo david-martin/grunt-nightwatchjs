@@ -37,10 +37,22 @@ module.exports = function(grunt) {
       args = args.concat(['--group', groups]);
     }
 
+    var skipGroups = grunt.option('skipgroup');
+
+    if(skipGroups){
+      args = args.concat(['--skipgroup', skipGroups]);
+    }
+
     var tag = grunt.option('tag');
 
     if(tag){
       args = args.concat(['--tag', tag]);
+    }
+
+    var skipTag = grunt.option('skiptag');
+
+    if(skipTag){
+      args = args.concat(['--skiptag', skipTag]);
     }
 
     var config = grunt.option('config');
@@ -49,12 +61,23 @@ module.exports = function(grunt) {
       args = args.concat(['--config', config]);
     }
 
+    var failedTests = grunt.option('failedTests');
+
+    if(failedTests){
+      args = args.concat(['--failedTests', failedTests]);
+    }
+
     grunt.log.writeln('Running nightwatchjs with args:' + util.inspect(args, { depth: null }));
-    require('child_process').spawn('./node_modules/.bin/nightwatch', args, {
+    require('child_process').spawn('./node_modules/nightwatch/bin/nightwatch', args, {
       env: process.env,
       stdio: 'inherit'
     }).on('close', function(code) {
-      if (code !== 0) {
+      if(code !== 0){
+        grunt.event.emit('nightwatch.failure',code);
+      } else {
+        grunt.event.emit('nightwatch.success',code);
+      }
+      if (code !== 0 && !grunt.option('skipExit')) {
         return done(false);
       }
       return done();
