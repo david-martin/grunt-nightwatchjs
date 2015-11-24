@@ -49,10 +49,10 @@ module.exports = function(grunt) {
       args = args.concat(['--tag', tag]);
     }
 
-    var skipTag = grunt.option('skiptag');
+    var skipTag = grunt.option('skiptags');
 
     if(skipTag){
-      args = args.concat(['--skiptag', skipTag]);
+      args = args.concat(['--skiptags', skipTag]);
     }
 
     var config = grunt.option('config');
