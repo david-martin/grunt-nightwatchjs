@@ -67,6 +67,16 @@ module.exports = function (grunt) {
       args = args.concat(['--failedTests', failedTests]);
     }
 
+    var retries = grunt.option('retries');
+    if (retries) {
+      args = args.concat(['--retries', retries]);
+    }
+
+    var suiteRetries = grunt.option('suiteRetries');
+    if (suiteRetries) {
+      args = args.concat(['--suiteRetries', suiteRetries]);
+    }
+
     grunt.log.writeln('Running nightwatch with args:' + util.inspect(args, {depth: null}));
     require('child_process').spawn('node', args, {
       env: process.env,
