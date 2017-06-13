@@ -1,7 +1,7 @@
 {
   "name": "grunt-nightwatchjs",
   "description": "Grunt plugin for http://nightwatchjs.org/",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "homepage": "https://github.com/david-martin/grunt-nightwatchjs",
   "author": {
     "name": "David Martin",
